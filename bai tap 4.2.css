@@ -1,0 +1,16 @@
+.caption{
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+}
+nav{
+    background-color: gainsboro;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: dimgray;
+    padding: 10px;
+}
