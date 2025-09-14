@@ -1,0 +1,59 @@
+.head{
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(48, 240, 48) ;
+    color: aliceblue;
+}
+.anav{
+    padding: 10px;
+    color: blue;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    margin: 0px;
+    padding: 10px;
+}
+.aside1{
+    width: 20%;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    height: 400px;
+    margin-right: 0px;
+}
+.a{
+    
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+}
+figure{
+    margin: 0px;
+}
+figcaption{
+    margin: 10px 0px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0px;
+    background-color: rgb(77, 73, 73);
+    color: antiquewhite;
+}
+p{
+    margin: 0px;
+    padding: 10px;
+    height: 20px;
+}
+a{
+    color: blue;
+}
+
