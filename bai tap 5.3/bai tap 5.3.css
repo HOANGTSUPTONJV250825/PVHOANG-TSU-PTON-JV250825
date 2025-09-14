@@ -1,0 +1,15 @@
+button{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    background-color: aliceblue;
+    color: black;
+    font-size: large;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+}
+button:active{
+    background-color: red;
+    color: aliceblue;
+}
