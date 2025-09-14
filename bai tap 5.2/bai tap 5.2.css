@@ -1,0 +1,13 @@
+ul{
+    list-style: none;
+}
+li{
+    font-size: large;
+    padding: 20px;
+    background-color: rgb(189, 185, 185);
+    color: white;
+    border-top: 10px solid white;
+}
+li:hover{
+    background-color: rgb(61, 60, 60);
+}
