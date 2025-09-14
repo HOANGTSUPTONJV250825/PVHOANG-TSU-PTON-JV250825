@@ -1,0 +1,22 @@
+h1{
+   text-align: center; 
+}
+p{
+    padding: 0px;
+    margin: 10px;
+}
+input{
+    padding: 0px;
+    width: 300px;;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+button{
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: rgb(43, 182, 236);
+    color: aliceblue;
+}
