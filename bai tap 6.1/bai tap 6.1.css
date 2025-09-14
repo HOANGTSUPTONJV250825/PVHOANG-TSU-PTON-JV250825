@@ -1,0 +1,31 @@
+.head{
+    text-align: center;
+    background-color: rgb(51, 86, 241);
+    color: aliceblue;
+    margin: 20px;
+    padding: 50px;
+    line-height: 50px;
+}
+h1{ margin: 0px;}
+.nav{
+    text-decoration: none;
+    padding: 20px;
+    color: aliceblue;
+}
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid blue;
+    vertical-align: middle;
+    margin: 10px;
+}
+p{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
