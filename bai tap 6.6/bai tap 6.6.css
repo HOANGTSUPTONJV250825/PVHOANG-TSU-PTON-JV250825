@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    font-family: 'roboto', sans-serif;
+}
+.a{
+    border-left: 5px solid orange;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.774);
+}
+.d{
+    text-decoration: none;
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.774);
+}
+.e{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.74);
+    font-size: large;
+}
+p{
+    width: 400px;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.664);
+}
+hr{
+    width: 400px;
+    margin: 0px;
+}
+a:hover{
+    background-color: gray;
+}
+.g{
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    font-size: x-large;
+    
+  }  
+.h{
+    background-image: url(./Capture1.PNG) ; 
+    background-size: 400px;
+    height: 500px;
+    width: 400px;
+   
+}
+.h a{
+    position: relative;
+    top: 370px;
+    left: 20px;
+    text-align: center;
+}
+.i{
+    width: 340px;
+}
+.j aside{
+    float: left;
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+}
+.j{
+    background-color: bisque;
+
+}
