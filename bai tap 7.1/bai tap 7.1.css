@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.chirld{
+    background-color: rgb(46, 46, 231);
+    color: aliceblue;
+    height: 100px;
+    width: 100px;
+}
+.father{
+    display: flex;
+    opacity: 0.7;
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+
+}
