@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.chirld{
+    width: 300px;
+    height: 60px;
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding: 20px;
+}
+.father{
+    height: 180px;
+    padding: 10px;
+    opacity: 0.5;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
