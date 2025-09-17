@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chirld{
+    background-color: pink;
+    color: aliceblue;
+    width: calc(25% - 10px);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+@media (max-width: 1024px){
+    .chirld{
+    background-color: pink;
+    color: aliceblue;
+    width: calc(50% - 10px);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    }
+}
+@media (max-width: 768px){
+    .chirld{
+    background-color: pink;
+    color: aliceblue;
+    width: calc(100% - 10px);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    }
+}
