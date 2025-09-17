@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 500px;
+}
+.head{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: blue;
+    color: aliceblue;
+    margin: 0.5%;
+    width: 99%;
+    height: 10%;
+}
+.sidebar{
+    background-color: green;
+    color: aliceblue;
+    width: 20%;
+    margin: 0% 0.5%;
+}
+.content{
+    background-color: red;
+    color: aliceblue;
+    width: 78.5%;
+
+}
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 80%;
+}
+.foot{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: purple;
+    color: aliceblue;
+    margin: 0.5%;
+    width: 99%;
+    height: 10%;
+}
