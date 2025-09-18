@@ -20,7 +20,7 @@
     width: 20%;
 }
 .nav{
-    width: 20%;
+    width: 200px;
     line-height: 40px;
 }
 a{
@@ -61,4 +61,23 @@ a{
     align-content: center;
     gap: 10px;
 
+}
+@media(max-width: 768px){
+    .tt{
+    background-color: antiquewhite;
+    color: black;
+    height: 40px;
+    width: calc(100% - 20px);
+    text-align: center;
+    line-height: 40px;
+    }
+    .foot{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
 }
