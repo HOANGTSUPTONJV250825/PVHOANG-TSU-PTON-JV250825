@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    max-width: 1440;
+}
+.logo{
+    width: 20%;
+}
+.navchild{
+    text-decoration: none;
+    margin: 20px;
+    color: gray;
+}
+.nav{
+    width: 40%;
+    text-align: center;
+}
+.but1{
+    background-color: white;
+    color: black;
+    width: 40%;
+    border: 0;
+}
+.but2{
+    background-color: white;
+    width: 40%;
+    border: 1px solid rgb(0, 183, 255) ;
+    color: rgb(0, 183, 255);
+    border-radius: 3px;
+}
+.sign{
+    width: 20%;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60px;
+    line-height: 60px;
+}
+/*main*/
+p{
+    color: gray;
+    margin: 20px 0px;
+
+}
+.but3{
+    border: 0;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+.but4{
+    width: 40%;
+    height: 30px;
+    background-color: white;
+    color: rgb(0, 183, 255);
+    border: 0;
+}
+.mainchild1{
+    width: 20%;
+    height: 400px;
+    padding: 40px 0px;
+}
+.mainchild2{
+    width: 40%;
+    height: 400px;
+    margin-left: 20%;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ion-icon{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
