@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 1382;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+
+}
+.navchild{
+    text-decoration: none;
+    color: gray;
+    margin: 20px;
+}
+.navchild:hover{
+    color: black;
+    border-bottom: 2px solid orange;
+}
+.nav{
+    background-color: white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.but{
+    border: 0;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 50px;
+    margin-right: 10px;
+}
+.butchild{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 70px;
+}
+/*secsion2*/
+p{
+    color: gray;
+}
+.h1{
+    color: orangered;
+}
+.but1{
+    background-color: orangered;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+}
+.but2{
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section2child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 300px;
+}
+.day{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+.iconbut2{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+.icon1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.section2child2{
+    width: 10%;
+    height: 300px;
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+}
+.head{
+    background-image: url(./background.PNG);
+}
+/*section3*/
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    background-color: white;
+    width: 15%;
+    min-height: 100px;
+}
+.but3{
+    background-color: orangered;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    margin-left: 180px;
+}
+.formsection3{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+ }   
+ input{
+    border: 0;
+ }
+ select{
+    border: 0;
+ }
