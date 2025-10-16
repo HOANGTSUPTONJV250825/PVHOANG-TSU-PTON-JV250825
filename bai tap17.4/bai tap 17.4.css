@@ -1,0 +1,28 @@
+body{
+    background-color: green;
+    color: black;
+}
+.ov{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+#ov1{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+#ov2{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+#ov3{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
