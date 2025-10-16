@@ -1,0 +1,18 @@
+#someBox{
+    background-color: aliceblue;
+    margin: 20px 100px;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.p{
+    width: 80%;
+    line-height: 100px;
+}
+#but1{
+    border: 0;
+    width: 10%;
+}
