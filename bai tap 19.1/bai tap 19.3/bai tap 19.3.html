@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <h1 style="text-align: center;">Login</h1><br>
+    <form id="form" action="https://www.google.com/" method="post">
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" style="width: 100%; border-radius: 3px;" /><br>
+        <small id="email-error" style="color: red;"></small><br>
+        <label for="password">Password</label><br>
+        <div style="position: relative;">
+        <input type="password" name="password" id="password" placeholder="Enter your password" style="width: 100%; border-radius: 3px;" />
+        <button class="toggle-password" style="position: absolute; right: 0px; top: 5.2px; border: 0px;background-color: white;" id="togglePassword"><i  class="fa-solid fa-eye" ></i></button>
+        </div>
+        <small id="password-error" style="color: red;"></small><br>
+        <button id="Login" style="width: 100%; background-color: blue; color: white; border-radius: 3px;">Login</button>
+    </form>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;" >
+        <a style="line-height: 55px;" href="#">Forgot password?</a>
+        <p>or</p>
+        <a style="line-height: 55px;" href="#">Sign up</a>
+    </div>
+    <script src="./vcs2.js"></script>
+</body>
+</html>
