@@ -1,0 +1,33 @@
+CREATE DATABASE TMDT;
+
+USE TMDT;
+
+CREATE TABLE DanhMuc (
+    MaDM INT PRIMARY KEY,
+    TenDM VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE SanPham (
+    MaSP INT PRIMARY KEY,
+    TenSP VARCHAR(100) NOT NULL,
+    Gia DECIMAL(10,2) NOT NULL,
+    MaDM INT NOT NULL,
+    CONSTRAINT fk_danhmuc
+        FOREIGN KEY (MaDM) REFERENCES DanhMuc(MaDM)
+);
+
+INSERT INTO DanhMuc (MaDM, TenDM)
+VALUES
+(1, 'Điện thoại'),
+(2, 'Laptop'),
+(3, 'Phụ kiện');
+
+INSERT INTO SanPham (MaSP, TenSP, Gia, MaDM)
+VALUES
+(1, 'iPhone 14', 20000000, 1),
+(2, 'Samsung Galaxy S23', 18000000, 1),
+(3, 'Dell XPS 13', 35000000, 2);
+
+SELECT *
+FROM SanPham
+WHERE MaDM = 1;
