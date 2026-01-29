@@ -4,7 +4,9 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class StudentsManager {
     public static boolean addStudent(Students students){
@@ -61,6 +63,46 @@ public class StudentsManager {
             stmt.setInt(3,students.getAge());
             stmt.executeUpdate();
             conn.commit();
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            ConnecDB.closeConnection(conn);
+        }
+        return false;
+    }
+
+    public static List<Students> findAll(){
+        Connection conn = null;
+        CallableStatement stmt = null;
+        List<Students> students = new ArrayList<>();
+        try{
+            conn = ConnecDB.getConnection();
+            stmt = conn.prepareCall("{call FindAll()}");
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()){
+                Students students1 = new Students();
+                students1.setID(rs.getInt("ID"));
+                students1.setName(rs.getString("Name"));
+                students1.setAge(rs.getInt("Age"));
+                students.add(students1);
+            }
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }finally {
+            ConnecDB.closeConnection(conn);
+        }
+        return students;
+    }
+
+    public static boolean delStudent(int delAge){
+        Connection conn = null;
+        CallableStatement stmt = null;
+        try {
+            conn = ConnecDB.getConnection();
+            stmt = conn.prepareCall("{call delete_students_by_age(?)}");
+            stmt.setInt(1,delAge);
+            stmt.executeUpdate();
             return true;
         }catch (Exception e){
             e.printStackTrace();

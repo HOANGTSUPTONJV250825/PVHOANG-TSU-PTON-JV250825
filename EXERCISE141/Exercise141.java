@@ -10,10 +10,13 @@ public class Exercise141 {
         Scanner sc = new Scanner(System.in);
         StudentsManager manager = new StudentsManager();
         List<Students> students = Arrays.asList(
-                new Students(0,"Nguyen Van A", 17),
-                new Students(0,"Nguyen Van B", 17),
-                new Students(0,"Nguyen Van C", 17)
+                new Students(0,"Nguyen Van A", 15),
+                new Students(0,"Nguyen Van B", 16),
+                new Students(0,"Nguyen Van C", 13)
         );
+        for (Students S : students){
+            StudentsManager.addStudent(S);
+        }
         AddStudents(sc);
 
     }

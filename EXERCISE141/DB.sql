@@ -20,6 +20,14 @@ end //
 DELIMITER ;
 
 DELIMITER //
+CREATE PROCEDURE FindAll()
+BEGIN
+SELECT * FROM Students;
+end //
+DELIMITER ;
+
+
+DELIMITER //
 CREATE PROCEDURE find_student_by_ID(IN studentID INT)
 BEGIN
 SELECT * FROM Students WHERE ID = studentID;
@@ -36,6 +44,13 @@ BEGIN
 UPDATE Students SET Name = updateName,
                     Age = updateAge
 WHERE ID = updateID;
+end //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE delete_students_by_age(IN inAge INT)
+BEGIN
+DELETE FROM Students WHERE Age < inAge;
 end //
 DELIMITER ;
 
