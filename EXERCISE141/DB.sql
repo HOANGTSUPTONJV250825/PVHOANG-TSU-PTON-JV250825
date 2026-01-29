@@ -19,3 +19,25 @@ INSERT INTO Students(Name, Age)
 end //
 DELIMITER ;
 
+DELIMITER //
+CREATE PROCEDURE find_student_by_ID(IN studentID INT)
+BEGIN
+SELECT * FROM Students WHERE ID = studentID;
+end //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE update_student(
+    IN updateID INT,
+    IN updateName VARCHAR(50),
+    IN updateAge INT
+)
+BEGIN
+UPDATE Students SET Name = updateName,
+                    Age = updateAge
+WHERE ID = updateID;
+end //
+DELIMITER ;
+
+
+
