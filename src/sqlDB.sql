@@ -58,3 +58,13 @@ DELETE FROM Students WHERE student_id = in_id;
 end //
 
 DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE search_student(IN in_name VARCHAR(100))
+BEGIN
+SELECT * FROM Students WHERE full_name LIKE CONCAT('%', in_name, '%');
+end //
+
+DELIMITER ;
+
+

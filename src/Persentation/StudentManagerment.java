@@ -3,6 +3,7 @@ package Persentation;
 import Business.StudentsManager;
 import Entity.Student;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,7 +17,8 @@ public class StudentManagerment {
             System.out.println("3.sua thong tin sinh vien theo so ID");
             System.out.println("4.tim thong tin sinh vien qua so ID");
             System.out.println("5.xoa thong tin sinh vien qua so ID");
-            System.out.println("6.thoat");
+            System.out.println("6.hien thi danh sach theo ten");
+            System.out.println("7.thoat");
             System.out.println("moi nhap vao lua chon:");
             int choice = Integer.parseInt(sc.nextLine());
             switch (choice){
@@ -36,10 +38,13 @@ public class StudentManagerment {
                     DeleteInforStudents(sc);
                     break;
                 case 6:
+                    SearchInforStudentsByName(sc);
+                    break;
+                case 7:
                     System.exit(1);
                     break;
                 default:
-                    System.err.println("nhap vao so nguyen duong tu 1 den 6");
+                    System.err.println("nhap vao so nguyen duong tu 1 den 7");
             }
         }while (true);
     }
@@ -100,5 +105,19 @@ public class StudentManagerment {
         }else {
             System.err.println("Xoa that bai");
         }
+    }
+
+    public static void SearchInforStudentsByName(Scanner sc){
+        System.out.println("nhap vao ten sinh vien can tim: ");
+        String inName = sc.nextLine();
+        List<Student> students = StudentsManager.FindInforStudentByName(inName);
+        System.out.println("thong tin bang quan ly sinh vien theo ten:");
+        for (Student s : students){
+            System.out.println("-----------------------------------------");
+            s.DisplayInfor();
+            System.out.println("-----------------------------------------");
+        }
+
+
     }
 }

@@ -118,4 +118,29 @@ public class StudentsManager {
         }
         return false;
     }
+
+    public static List<Student> FindInforStudentByName(String inName){
+        Connection conn = null;
+        CallableStatement stmt = null;
+        List<Student> students = new ArrayList<>();
+        try {
+            conn = ConnectionDB.getConnection();
+            stmt = conn.prepareCall("{call search_student(?)}");
+            stmt.setString(1,inName);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()){
+                Student student = new Student();
+                student.setStudentID(rs.getInt("student_id"));
+                student.setStudentName(rs.getString("full_name"));
+                student.setStudentDateOfBirth(rs.getDate("date_of_birth"));
+                student.setStudentEmail(rs.getString("email"));
+                students.add(student);
+            }
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }finally {
+            ConnectionDB.closeConnection(conn);
+        }
+        return students;
+    }
 }
