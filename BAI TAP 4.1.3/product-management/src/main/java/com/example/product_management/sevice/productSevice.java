@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 @Service
 public class productSevice {
@@ -18,6 +19,26 @@ public class productSevice {
 
     public List<products> getAllProducts(){
         return products;
+    }
+
+    public products addProduct(products product){
+        products.add(product);
+        return product;
+    }
+
+    public products updateProduct(int ID, products newProduct){
+        for (products p: products){
+            if (p.getProductID() == ID){
+                p.setProductName(newProduct.getProductName());
+                p.setPrice(newProduct.getPrice());
+                return p;
+            }
+        }
+        return null;
+    }
+
+    public boolean deleteProduct(int ID){
+        return products.removeIf(p->p.getProductID() == ID);
     }
 
 
